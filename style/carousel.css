@@ -1,0 +1,19 @@
+.carousel-viewport {
+    width: 100%;
+
+    display: flex;
+
+    counter-reset: item;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory x;
+    scroll-behavior: smooth;
+}
+
+.carousel-item {
+    counter-increment: item;
+    position: absolute;
+    content: counter(item);
+
+    display: block;
+    width: 100%;
+}
