@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Switch Wiki</title>
+    <link rel="stylesheet" href="../style/components.css">
+    <link rel="stylesheet" href="../style/complex_components.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+</head>
+<body>
+    <div class="background-scroll" style="background-image: url('assets/main-page-background.png');">
+
+    </div>
+    <div id="navbar" class="margin-to-center navbar navbar-colored">
+        <div class="nav nav-border column-row">
+            <div class="left nav-left">
+                <div class="navbar-logo">
+                    <a href="#"><img class="navbar-img" src="../assets/logo/horizontal_logo.svg" alt="Switch Wiki"></a>
+                </div>
+                <button class="dark-mode-button mobile" onclick="swapTheme()">
+                    <img class="" src="../assets/icons/dark-mode.svg" alt="Toggle Dark Mode">
+                </button>
+            </div>
+            <ul class="navbar-nav right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nav link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nav link 2</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link">Dropdown</a>
+                    <div class="dropdown-content right-aligned default-border">
+                        <a class="dropdown-link" href="#">Dropdown Item</a>
+                        <a class="dropdown-link" href="#">Dropdown Item</a>
+                        <a class="dropdown-link" href="#">Dropdown Item</a>
+                    </div>
+                </li>
+                <button class="dark-mode-button desktop" onclick="swapTheme()">
+                    <img class="" src="../assets/icons/dark-mode.svg" alt="Toggle Dark Mode">
+                </button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content main-content">
+        <div class="section default-border column-row">
+            <div class="column">
+                <img class="medium-img" src="" alt="Sample Image">
+            </div>
+            <div class="column">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa in quam consequuntur voluptates qui natus iste tempora voluptatibus exercitationem? Deleniti, amet doloribus. Incidunt, delectus. Est quia expedita beatae perspiciatis nam.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="cropped-footer border-footer margin-to-center">
+        <div class="footer-content">
+            <p>Essa é uma página sobre switches e teclados!</p>
+        </div>
+    </footer>
+
+    <script src="../js/ColorTheme.js"></script>
+    <script src="../js/Responsivity.js"></script>
+</body>
+</html>
