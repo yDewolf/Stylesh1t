@@ -1,4 +1,4 @@
-const DARK_THEME_CSS = "style/themes/dark_theme.css";
+const DARK_THEME_CSS = "../style/themes/dark_theme.css";
 const TRANSITION_TIME_MS = 100;
 
 let head = document.getElementsByTagName("head")[0];
@@ -38,6 +38,8 @@ function swapTheme() {
 
 function placeTransitionCSS() {
     transition_style = document.createElement("style");
+    transition_style.type = "text/css";
+
     head.appendChild(transition_style);
     transition_style.textContent = TRANSITION_CSS;
 }
