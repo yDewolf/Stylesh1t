@@ -1,4 +1,4 @@
-const DARK_THEME_CSS = "../style/themes/dark_theme.css";
+const DARK_THEME_CSS = "style/themes/dark_theme.css";
 const TRANSITION_TIME_MS = 100;
 
 let head = document.getElementsByTagName("head")[0];
@@ -8,38 +8,58 @@ const TRANSITION_CSS = "*{transition: color, background-color " + TRANSITION_TIM
 let dark_theme_link = null;
 let transition_style = null;
 
-function getTheme() {
-    let root = document.querySelector(":root");
-}
+updateTheme(true);
 
 function swapTheme() {
     if (dark_theme_link != null) {
-        head.removeChild(dark_theme_link);
-        dark_theme_link = null;
+        localStorage.setItem("theme", "light")
 
-        placeTransitionCSS();
-        window.setTimeout(removeTransitionCSS, TRANSITION_TIME_MS * 2);
-        
+        updateTheme();
         return;
     }
 
-    let link_css = document.createElement("link");
-    link_css.rel = "stylesheet";
-    link_css.type = "text/css";
-    link_css.href = DARK_THEME_CSS;
+    localStorage.setItem("theme", "dark")
+    updateTheme();
+}
 
-    dark_theme_link = link_css;
+function updateTheme(just_loaded = false) {
+    // let params = new URLSearchParams(location.search);
 
-    head.appendChild(link_css);
+    switch (localStorage.getItem("theme")) {
+        case "dark":
+            let link_css = document.createElement("link");
+            link_css.rel = "stylesheet";
+            link_css.type = "text/css";
+            link_css.href = DARK_THEME_CSS;
 
-    placeTransitionCSS();
-    window.setTimeout(removeTransitionCSS, TRANSITION_TIME_MS * 2);
+            dark_theme_link = link_css;
+
+            head.appendChild(link_css);
+
+            if (!just_loaded) {
+                placeTransitionCSS();
+                window.setTimeout(removeTransitionCSS, TRANSITION_TIME_MS * 2);
+            }
+            break;
+        case "light":
+            if (dark_theme_link != null) {
+                head.removeChild(dark_theme_link);
+                dark_theme_link = null;
+                
+                if (!just_loaded) {
+                    placeTransitionCSS();
+                    window.setTimeout(removeTransitionCSS, TRANSITION_TIME_MS * 2);
+                }
+            }
+            break;
+
+        default:
+            break;
+    }
 }
 
 function placeTransitionCSS() {
     transition_style = document.createElement("style");
-    transition_style.type = "text/css";
-
     head.appendChild(transition_style);
     transition_style.textContent = TRANSITION_CSS;
 }

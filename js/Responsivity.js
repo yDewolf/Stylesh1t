@@ -8,18 +8,13 @@ document.addEventListener("resize", function () {
 
 function updateFooterStatus() {
     let navbar = document.getElementById("navbar");
-    let content_elements = document.getElementsByClassName("content");
-    
-    let total_size = navbar.clientHeight;
-    for (idx = 0; idx < content_elements.length; idx++) {
-        let element = content_elements[idx];
-        total_size += element.clientHeight;
-    }
-    console.log(total_size);
-
+    let main_content = document.getElementsByTagName("main")[0];
     let footer = document.getElementById("footer");
-
+    
+    let total_size = navbar.clientHeight + main_content.clientHeight + footer.clientHeight;
+    
     let max_size = window.innerHeight;
+    console.log(total_size, max_size);
     if (total_size > max_size) {
         console.log("Window is big enough, unfixing footer")
         footer.classList.remove("fixed");

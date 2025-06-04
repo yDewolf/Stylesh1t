@@ -12,6 +12,7 @@
 
 
 
+
 body {
     background-color: var(--background-color);
     margin: 0;
@@ -36,11 +37,15 @@ body {
     text-align: justify;
     padding: 30px 20px;
     margin: 20px auto;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .section {
-    padding: 10px 20px;
-    margin: auto;
+    padding: 20px;
+    margin: 20px auto;
     width: 70%;
     background-color: var(--background-color);
 }
@@ -102,7 +107,7 @@ button[type="submit"]:hover {
 
 .medium-img {
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 
 .right {
@@ -114,10 +119,18 @@ button[type="submit"]:hover {
 }
 
 footer {
-    height: 100px;
+    min-height: 100px;
 
     color: var(--secondary-color);
     background-color: var(--light-main-color);
+}
+
+.footer-items {
+    list-style: none;
+}
+
+.footer-icon {
+    width: 32px;
 }
 
 .border-footer {
@@ -166,10 +179,27 @@ footer {
     display: none;
 }
 
+thead {
+    font-weight: bold;
+}
+
+table, td {
+    padding: 3px;
+    align-content: baseline;
+    text-align: left;
+
+    border: 2px solid var(--main-color);
+    border-collapse: collapse;
+}
+
 /* max-width = --max-page-size */
 @media only screen and (max-width: 1100px) {
     :root {
         --hpixels-to-centralize: 0;
+    }
+
+    .cropped-footer {
+        width: 100vw;
     }
 }
 
@@ -208,7 +238,6 @@ footer {
     }
 
     .content {
-        margin: auto 20px;
         padding: 10px 3px;
     }
 
