@@ -1,6 +1,6 @@
 .navbar {
     img {
-        width: var(--navbar-logo-height);
+        height: var(--navbar-logo-height);
     }
 }
 
@@ -50,7 +50,7 @@
         width: 100%;
     }
 
-    .navbar {
+    .nav {
         flex-direction: column;
         padding: 10px 15px;
         margin: 0;

@@ -13,7 +13,7 @@
 @property --navbar-logo-height {
     syntax: "<length>";
     inherits: true;
-    initial-value: 70px;
+    initial-value: 75px;
 }
 
 @property --navbar-border-size {
