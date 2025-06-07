@@ -1,0 +1,13 @@
+@import url("Properties.css");
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: var(--default-font);
+
+    color: var(--main-color);
+}
+
+p {
+    text-align: justify;
+}

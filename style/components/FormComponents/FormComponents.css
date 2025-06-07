@@ -1,0 +1,19 @@
+.input-row {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+
+    label {
+        margin: auto 0;
+    }
+    
+    input {
+        border-radius: var(--default-border-radius);
+
+        padding: 5px;
+        border: var(--main-color) solid var(--default-border-size);
+
+        margin: auto;
+        margin-right: 0;
+    }
+}

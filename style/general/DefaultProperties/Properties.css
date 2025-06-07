@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@property --default-font {
+    syntax: "<string>";
+    inherits: true;
+    initial-value: "Poppins";
+}
+
+@property --main-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #000000;
+}
+
+@property --light-main-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #494f8a;
+}
+
+@property --secondary-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #fff;
+}
+
+@property --background-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #fff;
+}
+
+@property --default-border-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #17222c;
+}
+
+@property --default-border-radius {
+    syntax: "<integer>";
+    inherits: true;
+    initial-value: 12px;
+}

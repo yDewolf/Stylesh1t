@@ -1,0 +1,9 @@
+@import url("ScreenSizeProperties.css");
+
+.padding-to-center {
+    padding: 0px var(--hpixels-to-centralize);
+}
+
+.margin-to-center {
+    margin: 0px var(--hpixels-to-centralize);
+}
