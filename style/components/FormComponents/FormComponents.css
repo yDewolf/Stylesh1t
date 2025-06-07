@@ -17,3 +17,19 @@
         margin-right: 0;
     }
 }
+
+button[type="submit"] {
+    transition: background-color 100ms;
+
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+    
+    border-radius: var(--default-border-radius);
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--light-main-color);
+}
