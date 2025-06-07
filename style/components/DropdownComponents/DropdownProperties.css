@@ -1,0 +1,27 @@
+@property --dropdown-min-width {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 160px;
+}
+
+.right-aligned {
+    right: 0;
+}
+
+.left-aligned {
+    left: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .right-aligned {
+        left: 0;
+        right: auto;
+    }
+
+    .left-aligned {
+        right: 0;
+        left: auto;
+    }
+}

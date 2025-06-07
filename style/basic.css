@@ -1,7 +1,11 @@
 @import url("general/DefaultProperties/import.css");
+
 @import url("responsivity/MobileToggle/import.css");
 @import url("responsivity/ScreenSize/import.css");
 
 @import url("components/SimpleContainers/import.css");
 @import url("components/FormComponents/import.css");
 @import url("components/Navbar/import.css");
+
+@import url("components/GeneralButtons/import.css");
+@import url("components/DropdownComponents/import.css");
