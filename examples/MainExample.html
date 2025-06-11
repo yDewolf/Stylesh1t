@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Example</title>
-    <link rel="stylesheet" href="../style/components.css">
+    <link rel="stylesheet" href="../style/basic.css">
+    <!-- <link rel="stylesheet" href="../style/components.css">
     <link rel="stylesheet" href="../style/complex_components.css">
     <link rel="stylesheet" href="../style/carousel.css">
-    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/navbar.css"> -->
 </head>
 <body>
     <div class="background-scroll" style="background-image: url('assets/main-page-background.png');">
@@ -17,7 +18,7 @@
         <div class="nav nav-border column-row">
             <div class="left nav-left">
                 <div class="navbar-logo">
-                    <a href="#"><img class="navbar-img" src="../assets/logo/horizontal_logo.svg" alt="Horizontal Logo"></a>
+                    <a href="#"><img class="navbar-img" src="../assets/logo/stylesh1t-horizontal.svg" alt="Horizontal Logo"></a>
                 </div>
                 <button class="dark-mode-button mobile" onclick="swapTheme()">
                     <img class="" src="../assets/icons/dark-mode.svg" alt="Toggle Dark Mode">
@@ -46,7 +47,7 @@
     </div>
 
     <div class="content main-content">
-        <div class="section">
+        <!-- <div class="section">
             <div class="carousel-viewport">
                 <ol class="carousel">
                     <li class="carousel-item">
@@ -60,7 +61,7 @@
                     </li>
                 </ol>
             </div>
-        </div>
+        </div> -->
 
         <div class="section default-border column-row">
             <div class="column">
@@ -75,10 +76,14 @@
 
     <footer id="footer" class="cropped-footer border-footer margin-to-center">
         <div class="footer-content">
-            <p>Essa é uma página sobre switches e teclados!</p>
+            <p>This is the main example of the Stylesh1t framework!</p>
         </div>
     </footer>
 
+    <script src="../js/Properties.js"></script>
+    <script>
+        setFolderPrefix("../");
+    </script>
     <script src="../js/ColorTheme.js"></script>
     <script src="../js/Responsivity.js"></script>
 </body>

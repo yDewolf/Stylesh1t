@@ -1,0 +1,20 @@
+.dark-mode-button {
+    width: fit-content;
+    background: none;
+    border: none;
+    
+    align-items: center;
+    img {
+        margin: auto;
+        width: 64px;
+    }
+}
+
+.dark-mode-button:hover {
+    background-color: var(--light-main-color);
+    border-radius: var(--default-border-radius);
+    
+    img {
+        filter: invert();
+    }
+}

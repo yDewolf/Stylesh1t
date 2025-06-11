@@ -1,0 +1,55 @@
+
+@property --main-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #fff9f7;
+}
+
+@property --light-main-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #262a4e;
+}
+
+@property --secondary-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ffffff;
+}
+
+@property --background-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #1b1c27;
+}
+
+@property --default-border-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #262a4e;
+}
+
+* {
+    --navbar-color: var(--background-color);
+}
+
+/* :root {
+    --main-color: #fff9f7;
+    --light-main-color: #262a4e;
+    --secondary-color: #ffffff; 
+    --background-color: #1b1c27;
+    --navbar-color: var(--background-color);
+} */
+
+.dark-mode-button {
+    img {
+        filter: invert();
+    }
+}
+
+.dark-mode-button:hover {
+    background-color: var(--secondary-color);
+    img {
+        filter: none;
+    }
+}

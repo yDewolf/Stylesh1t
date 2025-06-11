@@ -1,0 +1,7 @@
+/* Properties */
+@property --default-border-size {
+    syntax: "<integer>";
+    inherits: true;
+    initial-value: 2px;
+}
+

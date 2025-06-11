@@ -1,0 +1,58 @@
+/* Base classes */
+
+[class*="content-"] {
+    padding: 30px, 0;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Simple containers */
+
+main {
+    padding: 30px 20px;
+    margin: 20px auto;
+}
+
+.content-section {
+    margin: 20px auto;
+    width: 70%;
+    background-color: var(--background-color);
+}
+
+/* Tables */
+
+thead {
+    font-weight: bold;
+}
+
+table, td {
+    padding: 3px;
+    align-content: baseline;
+    text-align: left;
+
+    border: 2px solid var(--main-color);
+    border-collapse: collapse;
+}
+
+/* Other */
+
+.default-border {
+    border: --default-border-size solid var(--main-color);
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 769px) {
+    .content {
+        margin: auto var(--hpixels-to-centralize);
+    }
+}

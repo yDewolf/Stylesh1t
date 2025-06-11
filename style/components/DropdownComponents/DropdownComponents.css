@@ -1,0 +1,47 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Should be placed inside the 'dropdown' element */
+.dropdown-content {
+    padding: 5px;
+    min-width: var(--dropdown-min-width);
+
+    box-shadow: 0px 8px 16px 0px #00000033;
+    background-color: var(--background-color);
+
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-link {
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 2px;
+}
+
+.dropdown-link:hover {
+    background-color: var(--light-main-color);
+    color: var(--secondary-color)
+}
+
+@keyframes drop-menu {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 100vh;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    animation: drop-menu 0.75s linear;
+    overflow: hidden;
+    display: flex;
+    height: fit-content;
+}

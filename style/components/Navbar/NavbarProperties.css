@@ -1,0 +1,35 @@
+@property --navbar-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ffffff;
+}
+
+@property --navbar-border-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #3c3a85;
+}
+
+@property --navbar-logo-height {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 75px;
+}
+
+@property --navbar-border-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 2px;
+}
+
+@property --navbar-nav-item-gap {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 5px;
+}
+
+@property --nav-item-font-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 18px;
+}

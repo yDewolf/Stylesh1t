@@ -1,4 +1,4 @@
-const DARK_THEME_CSS = "style/themes/dark_theme.css";
+const DARK_THEME_CSS = localStorage.getItem("folderPrefix") + "style/themes/DarkTheme/import.css";
 const TRANSITION_TIME_MS = 100;
 
 let head = document.getElementsByTagName("head")[0];

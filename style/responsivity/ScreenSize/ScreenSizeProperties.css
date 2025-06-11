@@ -1,0 +1,21 @@
+@property --max-page-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 1100px;
+}
+
+:root {
+    --hpixels-to-centralize: calc((100vw - var(--max-page-size)) / 2)
+}
+
+/* @property --hpixels-to-centralize {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: calc((100vw - var(--max-page-size)) / 2);
+} */
+
+@media only screen and (max-width: 1100px) {
+    * {
+        --hpixels-to-centralize: 0;
+    }
+}
