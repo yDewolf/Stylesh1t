@@ -46,7 +46,7 @@ table, td {
 /* Other */
 
 .default-border {
-    border: --default-border-size solid var(--main-color);
+    border: var(--default-border-size) solid var(--main-color);
 }
 
 /* Media queries */
@@ -54,5 +54,12 @@ table, td {
 @media only screen and (min-width: 769px) {
     .content {
         margin: auto var(--hpixels-to-centralize);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        width: auto;
+        margin: 0 10px;
     }
 }
