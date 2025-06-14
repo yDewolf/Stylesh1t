@@ -5,6 +5,8 @@
     transition: position 0.5s linear;
     padding: 5px 10px;
 
+    display: flex;
+
     font-size: var(--nav-item-font-size);
     margin-left: 15px;
 }
@@ -12,9 +14,7 @@
 .nav-item:hover {
     background-color: var(--light-main-color);
 
-    .nav-link {
-        color: var(--secondary-color);
-    }
+    color: var(--secondary-color);
 }
 
 .nav-link {
